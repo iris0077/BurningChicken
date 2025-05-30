@@ -1,0 +1,246 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ff0000;
+  margin-top: 0;       /* Enlève la marge haute par défaut */
+}
+canvas {
+  display: block;
+}
+
+@font-face {
+  font-family: 'BirdsOfParadise';
+  src: url('fonts/BirdsOfParadise.ttf') format('truetype');
+  font-style:italic; /* ou italic si vous avez une version italique */
+  font-weight: normal; /* ajustez si nécessaire */
+}
+
+
+
+body div p{
+  text-align: center;
+  color:blue;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  z-index: 9998;
+  pointer-events: none;
+}
+h1 {
+  color:chartreuse;
+  text-align: center;  /* Centre le texte horizontalement */
+  margin-top: 0;       /* Enlève la marge haute par défaut */
+  font-size: 8vw;
+}
+
+h2{
+  position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Centrage parfait */
+      margin: 0;
+
+      font-family: 'BirdsOfParadise', cursive;
+      font-style: italic;
+     
+      font-size: 2rem;
+      line-height: 1.2;
+
+      color:chartreuse;
+
+      text-shadow:
+    0 0 5px #ff00cc,
+    0 0 10px #ff00cc,
+    0 0 20px #ff00cc,
+    0 0 40px #ff00cc,
+    0 0 80px #ff00cc;
+}
+
+h5{
+  font-size: 3vw;
+ 
+  position: fixed;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrage parfait */
+  margin: 0;
+  font-family: 'BirdsOfParadise', cursive;
+  font-style: italic;
+ 
+  font-size: 2rem;
+  line-height: 1.2;
+
+  color:chartreuse;
+  text-shadow:
+    0 0 5px #ff00cc,
+    0 0 10px #ff00cc,
+    0 0 20px #ff00cc,
+    0 0 40px #ff00cc,
+    0 0 80px #ff00cc;
+}
+
+h6 {
+
+  font-size: 3vw;
+  color:rgb(255, 255, 255);
+ 
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrage parfait */
+  margin: 0;
+  font-family: 'BirdsOfParadise', cursive;
+  font-style: italic;
+ 
+  font-size: 2rem;
+  line-height: 1.2;
+
+  text-shadow:
+    0 0 5px #ff00cc,
+    0 0 10px #ff00cc,
+    0 0 20px #ff00cc,
+    0 0 40px #ff00cc,
+    0 0 80px #ff00cc;
+
+}
+
+
+
+
+
+main h1 {
+  color:chartreuse;
+
+}
+
+body h1{
+
+}
+body div p{
+  font-size: 1rem;
+  color:rgb(255, 255, 255);
+  line-height: 7.5;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrage parfait */
+  margin: 0;
+  font-family: 'BirdsOfParadise', cursive;
+  font-style: italic;
+ 
+
+  line-height: 1.2;
+  text-shadow:
+    0 0 5px #ff6b00,
+    0 0 10px #ff6b00,
+    0 0 20px #ff8800,
+    0 0 30px #ffaa00,
+    0 0 50px #ffaa00,
+    0 0 70px #ffcc33;
+}
+
+body nav {
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrage parfait */
+  margin: 0;
+}
+a{
+  font-size: 4vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#lien_page2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  img{ 
+    width: 1000PX;
+   }
+   
+}
+
+
+
+
+#section_1{
+  height: 100vh;
+  background-image: url("EXPLOSION.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+
+
+#casserole {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: block;
+}
+
+#chicken {
+  position: absolute;
+  z-index: 9999; /* toujours au-dessus */
+  pointer-events: none; /* ne bloque pas les clics en dessous */
+}
+
+
+pour que le txt de index apparaisse peti a peti: 
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+/* bckgnd p2*/
+.background-example {
+  background-image:url("COP.gif");
+  background-size:cover;        /* L’image couvre tout le bloc */
+  background-position:center;   /* Centrer l’image */
+  background-repeat:no-repeat;  /* Ne pas répéter l’image */
+  height:100vh;                 /* Hauteur = 100% de la fenêtre */
+  position: relative; /* pour que les enfants absolus se basent dessus */
+  overflow: hidden;   /* empêche les éléments de dépasser visuellement */
+}
+
+
+#image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* au-dessus du fond, mais en dessous du chicken par ex */
+  width: 100vw; /* largeur de l'écran */
+  max-width: 100%; /* ne dépasse pas */
+  overflow: hidden;
+
+  pointer-events: none; /* ne bloque pas les clics en dessous */
+
+}
+
+#fire-img {
+  width: 100%;       /* étirement horizontal */
+  height: 0%;     
+  object-fit: fill;  /* ou 'cover' si tu veux un autre rendu */
+  display: block;
+  margin: 0 auto;
+  opacity: 50%;
+  z-index: 5;
+}
+
+#lien_page2 {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    z-index: 13;
+  }
